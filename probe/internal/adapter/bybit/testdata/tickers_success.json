@@ -1,0 +1,11 @@
+{
+  "retCode": 0,
+  "retMsg": "OK",
+  "result": {
+    "category": "linear",
+    "list": [
+      {"symbol": "BTCUSDT", "lastPrice": "65005.5", "bid1Price": "65005.0", "ask1Price": "65006.0"}
+    ]
+  },
+  "time": 1758960000123
+}

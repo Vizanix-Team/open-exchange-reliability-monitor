@@ -1,0 +1,9 @@
+{
+  "topic": "publicTrade.BTCUSDT",
+  "type": "snapshot",
+  "ts": 1758960000300,
+  "data": [
+    {"T": 1758960000290, "s": "BTCUSDT", "S": "Buy", "v": "0.010", "p": "65000.5", "L": "PlusTick", "i": "t-1", "BT": false, "seq": 200000001},
+    {"T": 1758960000291, "s": "BTCUSDT", "S": "Sell", "v": "0.020", "p": "65000.0", "L": "MinusTick", "i": "t-2", "BT": false, "seq": 200000001}
+  ]
+}

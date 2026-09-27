@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  probe:
+    name: probe (build, vet, test)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: "1.22"
+          cache-dependency-path: probe/go.sum
+      - name: go build
+        working-directory: probe
+        run: go build ./...
+      - name: go vet
+        working-directory: probe
+        run: go vet ./...
+      - name: go test
+        working-directory: probe
+        # CI never depends on live exchange availability — the probe test
+        # suite runs entirely against fixtures and an in-process fake
+        # exchange WebSocket server. See CONTRIBUTING.md.
+        run: go test ./... -race -count=1

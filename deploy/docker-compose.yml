@@ -1,0 +1,31 @@
+# Local demo stack: probe + Prometheus only. Central ingestion, ClickHouse,
+# backend, and the dashboard are not implemented yet — see ROADMAP.md
+# Phase 1/2. This is enough to run `docker compose up` and see the probe's
+# own metrics (docs/METRICS.md) scraped and queryable.
+version: "3.8"
+
+services:
+  probe-bybit:
+    build:
+      context: ../probe
+      args:
+        VERSION: local-dev
+    command:
+      - "--exchange=bybit"
+      - "--instrument=BTC-USDT-PERP"
+      - "--region=home-lab"
+      - "--provider=self-hosted"
+      - "--listen=:9464"
+    ports:
+      - "9464:9464"
+    restart: unless-stopped
+
+  prometheus:
+    image: prom/prometheus:v2.55.0
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml:ro
+    ports:
+      - "9090:9090"
+    depends_on:
+      - probe-bybit
+    restart: unless-stopped

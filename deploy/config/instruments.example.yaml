@@ -1,0 +1,16 @@
+# Canonical instrument mapping example. See docs/EXCHANGE_ADAPTERS.md
+# "Canonical instrument mapping" for why this indirection exists — venues
+# do not share symbol naming and configuration must never assume they do.
+# The Go probe's MVP default (probe/internal/config.BTCPerpMVP) mirrors
+# this file; a YAML loader wiring this file into the binary is tracked in
+# ROADMAP.md Phase 1.
+
+instrument:
+  canonical: BTC-USDT-PERP
+
+venues:
+  bybit: BTCUSDT          # category: linear
+  okx: BTC-USDT-SWAP
+  binance: BTCUSDT
+  coinbase: BTC-USD        # closest liquid equivalent (spot; no USDT perp)
+  kraken: PF_XBTUSD        # closest liquid equivalent
