@@ -8,7 +8,7 @@ package adapter
 import (
 	"context"
 
-	"github.com/vizanix/open-exchange-reliability-monitor/probe/internal/model"
+	"github.com/Vizanix-Team/open-exchange-reliability-monitor/probe/internal/model"
 )
 
 // Adapter is the exchange-specific integration surface. Implementations

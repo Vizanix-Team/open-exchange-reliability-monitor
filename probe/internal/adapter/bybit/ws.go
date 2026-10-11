@@ -10,10 +10,10 @@ import (
 
 	"github.com/gorilla/websocket"
 
-	oxrmadapter "github.com/vizanix/open-exchange-reliability-monitor/probe/internal/adapter"
-	"github.com/vizanix/open-exchange-reliability-monitor/probe/internal/errtax"
-	"github.com/vizanix/open-exchange-reliability-monitor/probe/internal/model"
-	"github.com/vizanix/open-exchange-reliability-monitor/probe/internal/orderbook"
+	oxrmadapter "github.com/Vizanix-Team/open-exchange-reliability-monitor/probe/internal/adapter"
+	"github.com/Vizanix-Team/open-exchange-reliability-monitor/probe/internal/errtax"
+	"github.com/Vizanix-Team/open-exchange-reliability-monitor/probe/internal/model"
+	"github.com/Vizanix-Team/open-exchange-reliability-monitor/probe/internal/orderbook"
 )
 
 // maxWSMessageBytes bounds inbound WebSocket frames. See SECURITY.md.

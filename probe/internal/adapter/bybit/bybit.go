@@ -17,8 +17,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/vizanix/open-exchange-reliability-monitor/probe/internal/errtax"
-	"github.com/vizanix/open-exchange-reliability-monitor/probe/internal/model"
+	"github.com/Vizanix-Team/open-exchange-reliability-monitor/probe/internal/errtax"
+	"github.com/Vizanix-Team/open-exchange-reliability-monitor/probe/internal/model"
 )
 
 const (

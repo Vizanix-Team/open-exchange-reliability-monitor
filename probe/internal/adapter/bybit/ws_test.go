@@ -10,7 +10,7 @@ import (
 
 	"github.com/gorilla/websocket"
 
-	"github.com/vizanix/open-exchange-reliability-monitor/probe/internal/model"
+	"github.com/Vizanix-Team/open-exchange-reliability-monitor/probe/internal/model"
 )
 
 // fakeExchangeServer is the CI stand-in for Bybit's public WebSocket,

@@ -3,10 +3,10 @@ package bybit
 import (
 	"context"
 
-	oxrmadapter "github.com/vizanix/open-exchange-reliability-monitor/probe/internal/adapter"
-	"github.com/vizanix/open-exchange-reliability-monitor/probe/internal/config"
-	"github.com/vizanix/open-exchange-reliability-monitor/probe/internal/errtax"
-	"github.com/vizanix/open-exchange-reliability-monitor/probe/internal/model"
+	oxrmadapter "github.com/Vizanix-Team/open-exchange-reliability-monitor/probe/internal/adapter"
+	"github.com/Vizanix-Team/open-exchange-reliability-monitor/probe/internal/config"
+	"github.com/Vizanix-Team/open-exchange-reliability-monitor/probe/internal/errtax"
+	"github.com/Vizanix-Team/open-exchange-reliability-monitor/probe/internal/model"
 )
 
 // bound resolves the canonical-instrument -> Bybit symbol mapping so the

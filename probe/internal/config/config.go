@@ -4,7 +4,7 @@ package config
 import (
 	"fmt"
 
-	"github.com/vizanix/open-exchange-reliability-monitor/probe/internal/model"
+	"github.com/Vizanix-Team/open-exchange-reliability-monitor/probe/internal/model"
 )
 
 // NodeIdentity identifies this probe for every measurement it emits and

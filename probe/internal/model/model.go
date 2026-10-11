@@ -7,7 +7,7 @@ package model
 import (
 	"time"
 
-	"github.com/vizanix/open-exchange-reliability-monitor/probe/internal/errtax"
+	"github.com/Vizanix-Team/open-exchange-reliability-monitor/probe/internal/errtax"
 )
 
 // CanonicalInstrument is the project-wide instrument identifier, decoupled

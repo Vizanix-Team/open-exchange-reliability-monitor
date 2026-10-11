@@ -16,11 +16,11 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 
-	"github.com/vizanix/open-exchange-reliability-monitor/probe/internal/adapter/bybit"
-	"github.com/vizanix/open-exchange-reliability-monitor/probe/internal/config"
-	"github.com/vizanix/open-exchange-reliability-monitor/probe/internal/metrics"
-	"github.com/vizanix/open-exchange-reliability-monitor/probe/internal/model"
-	"github.com/vizanix/open-exchange-reliability-monitor/probe/internal/probeengine"
+	"github.com/Vizanix-Team/open-exchange-reliability-monitor/probe/internal/adapter/bybit"
+	"github.com/Vizanix-Team/open-exchange-reliability-monitor/probe/internal/config"
+	"github.com/Vizanix-Team/open-exchange-reliability-monitor/probe/internal/metrics"
+	"github.com/Vizanix-Team/open-exchange-reliability-monitor/probe/internal/model"
+	"github.com/Vizanix-Team/open-exchange-reliability-monitor/probe/internal/probeengine"
 )
 
 func main() {

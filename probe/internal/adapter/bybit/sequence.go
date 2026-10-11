@@ -1,6 +1,6 @@
 package bybit
 
-import "github.com/vizanix/open-exchange-reliability-monitor/probe/internal/model"
+import "github.com/Vizanix-Team/open-exchange-reliability-monitor/probe/internal/model"
 
 // orderbookSequenceValidator implements the sequence rule documented in
 // docs/EXCHANGE_ADAPTERS.md "Bybit — sequence semantics (orderbook

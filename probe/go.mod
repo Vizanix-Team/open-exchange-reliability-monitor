@@ -1,4 +1,4 @@
-module github.com/vizanix/open-exchange-reliability-monitor/probe
+module github.com/Vizanix-Team/open-exchange-reliability-monitor/probe
 
 go 1.22
 

@@ -5,7 +5,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/vizanix/open-exchange-reliability-monitor/probe/internal/model"
+	"github.com/Vizanix-Team/open-exchange-reliability-monitor/probe/internal/model"
 )
 
 func loadOrderbookMsg(t *testing.T, name string) orderbookMessage {

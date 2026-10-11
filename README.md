@@ -58,11 +58,12 @@ are designed in [`ARCHITECTURE.md`](ARCHITECTURE.md) and tracked in
 
 ## Quick start
 
-Run the probe standalone and scrape its local Prometheus endpoint:
+Build the probe image and scrape its local Prometheus endpoint:
 
 ```bash
-docker run --rm -p 9464:9464 \
-  ghcr.io/vizanix/open-exchange-reliability-monitor/probe:latest \
+docker build -t oerm-probe ./probe
+
+docker run --rm -p 9464:9464 oerm-probe \
   --exchange bybit \
   --instrument BTC-USDT-PERP \
   --region home-lab \
@@ -70,6 +71,9 @@ docker run --rm -p 9464:9464 \
 
 curl http://localhost:9464/metrics
 ```
+
+Tagged releases publish the same image to
+`ghcr.io/vizanix-team/open-exchange-reliability-monitor/probe`.
 
 Or run the full local demo stack (probe + Prometheus, no ClickHouse/backend
 yet — see [`ROADMAP.md`](ROADMAP.md) Phase 2 for the central pipeline):
